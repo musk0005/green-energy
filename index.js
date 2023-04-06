@@ -1,7 +1,7 @@
 function preloader()
 {
 	
-	const imagesList = ["img/s1.jpg","img/s2.jpg","img/s3.jpg"];
+	const imagesList = ["s1.jpg","s2.jpg","s3.jpg"];
 
 	const images=[]
 
@@ -24,19 +24,19 @@ let mainobject =
 		t1:{
 		title: "Power house",
         bodytext: "This is a body text of tab1.",
-        imageurl: "img/s1.jpg",
+        imageurl: "s1.jpg",
 		imgalt:"solar panel 1"
 		},
 		t2:{
 		title: "Light Source",
         bodytext: "This is a body text of tab2.",
-        imageurl: "img/s2.jpg",
+        imageurl: "s2.jpg",
 		imgalt:"solar panel 2"
 		},
 		t3:{
 		title: "Today's Technique",
         bodytext: "This is a body text of tab1.",
-        imageurl: "img/s3.jpg",
+        imageurl: "s3.jpg",
 		imgalt:"solar panel 3"
 		}
 }

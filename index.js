@@ -59,11 +59,11 @@ let eventHandler = function (targetedbutton) {
         
     }
     currentclickeditem.setAttribute('id', 'active-button');
-    if(showcontentof=="Button2")
+    if(showcontentof=="button2")
     {
     	tabcontent.innerHTML=`<h1>${mainobject.t2.title}</h1><img src="${mainobject.t2.imageurl}" alt="${mainobject.t2.imgalt}"><p>${mainobject.t2.bodytext}</p>`;
     }
-    else if(showcontentof=="Button3")
+    else if(showcontentof=="button3")
     {
     	tabcontent.innerHTML=`<h1>${mainobject.t3.title}</h1><img src="${mainobject.t3.imageurl}" alt="${mainobject.t3.imgalt}"><p>${mainobject.t3.bodytext}</p>`;
     }

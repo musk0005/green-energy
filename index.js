@@ -1,7 +1,7 @@
 function preloader()
 {
 	
-	const imagesList = ["s1.jpg","s2.jpg","s3.jpg"];
+	const imagesList = ["img/s1.jpg","img/s2.jpg","img/s3.jpg"];
 
 	const images=[]
 
@@ -24,19 +24,19 @@ let mainobject =
 		t1:{
 		title: "Power house",
         bodytext: "This is a body text of tab1.",
-        imageurl: "s1.jpg",
+        imageurl: "img/s1.jpg",
 		imgalt:"solar panel 1"
 		},
 		t2:{
 		title: "Light Source",
         bodytext: "This is a body text of tab2.",
-        imageurl: "s2.jpg",
+        imageurl: "img/s2.jpg",
 		imgalt:"solar panel 2"
 		},
 		t3:{
 		title: "Today's Technique",
         bodytext: "This is a body text of tab1.",
-        imageurl: "s3.jpg",
+        imageurl: "img/s3.jpg",
 		imgalt:"solar panel 3"
 		}
 }
@@ -59,11 +59,11 @@ let eventHandler = function (targetedbutton) {
         
     }
     currentclickeditem.setAttribute('id', 'active-button');
-    if(showcontentof=="Tab2")
+    if(showcontentof=="Button2")
     {
     	tabcontent.innerHTML=`<h1>${mainobject.t2.title}</h1><img src="${mainobject.t2.imageurl}" alt="${mainobject.t2.imgalt}"><p>${mainobject.t2.bodytext}</p>`;
     }
-    else if(showcontentof=="Tab3")
+    else if(showcontentof=="Button3")
     {
     	tabcontent.innerHTML=`<h1>${mainobject.t3.title}</h1><img src="${mainobject.t3.imageurl}" alt="${mainobject.t3.imgalt}"><p>${mainobject.t3.bodytext}</p>`;
     }
@@ -76,6 +76,10 @@ let eventHandler = function (targetedbutton) {
 for (let i = 0; i < navigation.length; i++) {
     navigation[i].addEventListener("click", eventHandler);
 }
+
+
+
+
 
 
 
